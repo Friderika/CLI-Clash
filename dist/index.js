@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const weapons_1 = require("./weapons");
+const heroes_1 = require("./heroes");
+const arena_1 = require("./arena");
+const bela = new heroes_1.Warrior('Béla');
+bela.equipWeapon(new weapons_1.WarHammer());
+const pista = new heroes_1.Warrior('Pista');
+pista.equipWeapon(new weapons_1.Sword());
+arena_1.Arena.tournament(bela, pista);
